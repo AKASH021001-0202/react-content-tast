@@ -32,7 +32,7 @@ const Products = (products) => {
                   <h3>{item.title}</h3>
                   <p>{item.description}</p>
                   <h5>{item.rating}/5</h5>
-                  <h6>{item.price}</h6>
+                  <h6>₹{item.price}</h6>
                   <button
                     onClick={() => handleBuyNow(item)}
                     className="btn btn-info text-white"
