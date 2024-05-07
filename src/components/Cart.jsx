@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import { CartContext } from "../contexts/CartContext";
 import { Link } from "react-router-dom";
+import StarRating from "./StarRating";
 
 const Cart = () => {
   const { cartItems, removeFromCart } = useContext(CartContext);
@@ -38,7 +39,8 @@ const Cart = () => {
                   <div className="col-md-6">
                     <h3>{item.title}</h3>
                     <p>{item.description}</p>
-                    <h5>{item.rating}/5</h5>
+                    <StarRating rating={item.rating} />
+                    
                   </div>
                   <div className="col-md-3">
                     <select
