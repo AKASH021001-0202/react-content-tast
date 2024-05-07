@@ -47,6 +47,10 @@ border-radius: 20px;
   align-items: center;
   justify-content: center;
 }
+.fa-star::before {
+  content: "\f005";
+  color: gold;
+}
 @media(max-width:767px){
   .product-box.row.p-3.rounded {
     background: white;
